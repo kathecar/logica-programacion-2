@@ -13,19 +13,19 @@
             <span class="icono-temperatura"><i class="fa-solid fa-temperature-three-quarters"></i></span>
         </div>
 
-        <div id="celsius">
+        <        <div id="contenedor-celsius">
             <input type="number" id="celsius" placeholder="Celsius">
-            <span class="icono-celsius">&#8451<span>
+            <span class="icono-celsius">&#8451;</span> <!-- Cierre del span -->
         </div>
         
-        <div id="fahrenheit">
-            <input type="number" id="fahrenheit" placeholder="fahrenheit">
-            <span class="icono-fahrenheit">&#8457<span>
+        <div id="contenedor-fahrenheit">
+            <input type="number" id="fahrenheit" placeholder="Fahrenheit" readonly>
+            <span class="icono-fahrenheit">&#8457;</span> <!-- Cierre del span -->
         </div>
         
-        <div id="Kelvin">
-            <input type="number" id="Kelvin" placeholder="Kelvin">
-            <span class="icono-Kelvin">&#310<span>
+        <div id="contenedor-Kelvin">
+            <input type="number" id="Kelvin" placeholder="Kelvin" readonly>
+            <span class="icono-Kelvin">&#310;</span> <!-- Cierre del span -->
         </div>
 
         <div class="botonConvertir">
@@ -35,10 +35,16 @@
         </div>
 
         <div class="botonLimpiar">
-            <button id="limpiar">
+            <button type="button" id="limpiar"> <!-- Eliminé el onclick y usaré addEventListener -->
                 <i class="fa-solid fa-trash"></i> Limpiar
             </button>
         </div>
+
+    </div>
+
+    <script src="temperatura.js" defer></script>
+</body>
+</html>
 
     </div>
 
