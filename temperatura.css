@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(51, 38, 51, 0.8),rgba(0 0 0 / .8)),url(https://img.freepik.com/foto-gratis/grupo-personas-haciendo-ejercicio-juntos-al-aire-libre_23-2151061446.jpg?t=st=1736777072~exp=1736780672~hmac=e3ca3c4910aaaee7fca87f6092385cf2d95150bf8939e2d2e76eb098d125fc6a&w=740);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+.container{
+    
+    display:grid;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 3px #6Eb5c0;
+    font-family: 'Poppins', serif;
+}
+.icono-celsius,
+.icono-fahrenheit,
+.icono-Kelvin {
+    color: #af6894;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 40px;
+    font-size: 26px;
+    color: #af6894;
+    text-align: center;
+}
+.icono-temperatura{
+    font-size: 50px;
+}
+input{
+    flex: 5;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+}
+.botonConvertir:hover,
+.botonLimpiar:hover {
+    background-color: #4a97a0;
+}
+
+.botonConvertir,
+.botonLimpiar {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #af6894;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+/* Estilos para dispositivos extra pequeños (XS): Menos de 576px */
+@media (max-width: 575.98px) {
+    .container {
+        display : flex;
+        flex-wrap: wrap;
+    }
+    .icono-celsius,
+    .icono-fahrenheit,
+    .icono-Kelvin {
+        display : grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .navBarra div{
+        display : grid;
+        grid-template-columns:2fr 1fr;
+    }
+    .footer-content {
+        display : flex;
+        flex-wrap: wrap;
+    }
+    .purpose-grid {
+        display : flex;
+        flex-wrap: wrap;
+      }
+
+}
+    
+/* Estilos para dispositivos pequeños (S): 576px a 767px */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; 
+    }
+
+    .title h1 {
+        font-size: 22px; 
+    }
+
+    .icono-temperatura {
+        font-size: 40px; 
+    }
+
+    .botonConvertir,
+    .botonLimpiar {
+        width: 100%; 
+    }
+
+    .title {
+        font-size: 20px; 
+    }
+}

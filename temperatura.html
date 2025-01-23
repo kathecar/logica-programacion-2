@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="temperatura.js">
+    <link rel="stylesheet" href="temperatura.css">
     <title>Calculadora de Temperatura</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 
         <div id="celsius">
             <input type="number" id="celsius" placeholder="Celsius">
-            <span class="icono-celcius">&#8451<span>
+            <span class="icono-celsius">&#8451<span>
         </div>
         
         <div id="fahrenheit">
@@ -27,6 +27,21 @@
             <input type="number" id="Kelvin" placeholder="Kelvin">
             <span class="icono-Kelvin">&#310<span>
         </div>
+
+        <div class="botonConvertir">
+            <button id="convertir">
+                <i class="fa-solid fa-arrow-right"></i> Convertir
+            </button>
+        </div>
+
+        <div class="botonLimpiar">
+            <button id="limpiar">
+                <i class="fa-solid fa-trash"></i> Limpiar
+            </button>
+        </div>
+
     </div>
+
+    <script src="temperatura.js" defer></script>
 </body>
 </html>
