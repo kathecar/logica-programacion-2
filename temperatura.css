@@ -44,7 +44,7 @@ body {
     align-items: center;
     flex-wrap: wrap-reverse;
     gap: 40px;
-    font-size: 26px;
+    font-size: 35px;
     color: #af6894;
     text-align: center;
 }
@@ -121,7 +121,7 @@ input{
     }
 
     .title h1 {
-        font-size: 22px; 
+        font-size: 35px; 
     }
 
     .icono-temperatura {
