@@ -34,8 +34,6 @@
 // document.getElementById("limpiar").addEventListener("click", limpiarCampos);
 // }
 
-document.addEventListener("DOMContentLoaded", function () {
-
 let botonConvertir = document.getElementById("convertir");
 let botonLimpiar = document.getElementById("limpiar");
 
@@ -51,12 +49,6 @@ botonConvertir.addEventListener("click", function () {
 
     document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
     document.getElementById("Kelvin").value = kelvin.toFixed(2);
-});
-botonLimpiar.addEventListener("click", function() {
-    document.getElementById("celsius").value = '';
-    document.getElementById("fahrenheit").value = '';
-    document.getElementById("Kelvin").value = '';
-});
 });
 botonLimpiar.addEventListener("click", function() {
     document.getElementById("celsius").value = '';
